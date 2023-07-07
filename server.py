@@ -8,10 +8,14 @@ CORS(app)
 @app.route("/api/home", methods=['GET'])
 def return_home():
     return jsonify({
-        'message': "Hello world!"
+        'message': "This is great!",
+        'people': ['Maria','Pablo','Roberto']
+
     })
 
 if __name__ == "__main__":
     app.run(debug=True, port=8080)
 
-#venv\Scripts\activate.bat
+#to activate virtual environment: venv\Scripts\activate.bat
+#to run server run the following command from directory where server is: 
+#python server.js 
